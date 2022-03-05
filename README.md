@@ -1,7 +1,7 @@
 # Hello-World
 
-It is my first git project.
+<h4>It is my first git project.
 
 I want to be a good man!
 
-now I know how to use git,that is very cool!
+Now I know how to use git that is very cool!
