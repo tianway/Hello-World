@@ -5,3 +5,5 @@
 I want to be a good man!
 
 Now I know how to use git that is very cool!
+
+I will continue my learning for code.
