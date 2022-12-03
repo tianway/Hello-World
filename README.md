@@ -1,11 +1,5 @@
 # Hello-World
 
-<h4>It is my first git project.
+<h3>It is my first gitHub project.</h3> 
 
-I want to be better!
-
-Now I know how to use git that is very cool!
-
-I will continue learning for code.
-
-Now i'm learning JAVA.
+<h4>Now I'm learning Java and my code will store in there</h4>
