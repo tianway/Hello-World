@@ -41,7 +41,7 @@ public class NarcissisticNumber {
                 temp /= 10;
             }
             for (int a : arrayList) {
-                sum += Math.pow(a, arrayList.size()); //幂指数方法
+                sum += (int) Math.pow(a, arrayList.size()); //幂指数方法
             }
             if (sum == i)
                 System.out.println(i);
