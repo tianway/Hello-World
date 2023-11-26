@@ -24,9 +24,16 @@ public class Main {
 //        System.out.println(Arrays.toString(arr));
         /*二分查找练习*/
 //        int[] arr = {1, 3, 4, 6, 7, 8, 10, 11, 13, 15};
-//        int target = 6;
+//        int target = 0;
 //        System.out.println(Search.binarySearch(arr, target));
-        int steps = 0;
-        System.out.println(Frog.jumpPlans(steps));
+//        System.out.println(Search.binarySearchByRecursion(arr, 0, arr.length - 1, target));
+        /*青蛙跳阶练习*/
+//        int steps = 0;
+//        System.out.println(Frog.jumpPlans(steps));
+        /*回文字符串判断练习*/
+//        System.out.println(PalindromeString.isPalindromeString("ABCBA"));
+//        System.out.println(PalindromeString.isPalindromeString("ABCA"));
+        /*汉诺塔练习*/
+        Hanoi.hanoiByRecursion('A','B','C',3);
     }
 }

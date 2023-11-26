@@ -10,7 +10,7 @@ public class Search {
         return -1;
     }
 
-    /*二分查找*/
+    /*二分查找（循环写法）*/
     public static int binarySearch(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
@@ -25,5 +25,16 @@ public class Search {
             }
         }
         return -1;
+    }
+
+    /*二分查找递归写法*/
+    public static int binarySearchByRecursion(int[] arr, int left, int right, int target) {
+        if (left > right) return -1;
+        int mid = (left + right) / 2;
+        if (arr[mid] < target) {
+            return binarySearchByRecursion(arr, mid + 1, right, target);
+        } else if (arr[mid] > target) {
+            return binarySearchByRecursion(arr, left, mid - 1, target);
+        } else return mid;
     }
 }
