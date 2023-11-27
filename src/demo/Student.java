@@ -1,23 +1,16 @@
 package demo;
 
-public class Student extends Person implements Study, Cloneable {
+public class Student extends Person implements Study<Void>, Cloneable {
 
     private Status status;
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
-
-    Student() {
-    }
+    private int score = 80;
 
     Student(String name, int age, String sex) {
         super(name, age, sex, "学生");
+    }
+
+    public Student() {
+
     }
 
     public void doHomework() {
@@ -31,8 +24,9 @@ public class Student extends Person implements Study, Cloneable {
     }
 
     @Override
-    public void study() {
+    public Void study() {
         System.out.println("每天认真学习");
+        return null;
     }
 
     @Override
@@ -40,5 +34,20 @@ public class Student extends Person implements Study, Cloneable {
         return super.clone();
     }
 
+    public Status getStatus() {
+        return status;
+    }
 
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 }
