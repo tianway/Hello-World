@@ -1,5 +1,7 @@
 package demo;
 
+import java.util.Optional;
+
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
         /*object类提供的clone方法是浅拷贝*/
@@ -63,6 +65,39 @@ public class Main {
 //        }
 //        Predicate<String> predicate = Predicate.isEqual("hello world");
 //        System.out.println(predicate.test("hello world!"));
+        /*判空集合类Optional练习*/
+//        String str = "abc";
+//        optionalClassTest(str);
+//        optionalClassTest1(str);
+//        optionalClassTest2(str);
+//        optionalClassTest3(str);
 
+    }
+
+    private static void optionalClassTest(String str) {
+        //将传入的对象包装进Optional中
+        Optional
+                .ofNullable(str)
+                .ifPresent(s -> {
+                    if (!s.isEmpty()) System.out.println("字符串长度为：" + s.length());
+                }); //如果不为空，则执行这里的Consumer实现
+    }
+
+    private static void optionalClassTest1(String str) {
+        //将传入的对象包装进Optional中
+        String s = Optional.ofNullable(str).get();
+        System.out.println(s);
+    }
+
+    private static void optionalClassTest2(String str) {
+        //将传入的对象包装进Optional中
+        String s = Optional.ofNullable(str).orElse("tianway");
+        System.out.println(s);
+    }
+
+    private static void optionalClassTest3(String str) {
+        //将传入的对象包装进Optional中
+        Integer s = Optional.ofNullable(str).map(String::length).get();
+        System.out.println(s);
     }
 }
