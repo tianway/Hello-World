@@ -34,6 +34,35 @@ public class Main {
 //        System.out.println(PalindromeString.isPalindromeString("ABCBA"));
 //        System.out.println(PalindromeString.isPalindromeString("ABCA"));
         /*汉诺塔练习*/
-        Hanoi.hanoiByRecursion('A','B','C',3);
+//        Hanoi.hanoiByRecursion('A','B','C',3);
+        /*泛型练习*/
+//        Integer[] arr = {1, 4, 5, 2, 6, 3, 0, 7, 9, 8};
+//        Arrays.sort(arr, (o1, o2) -> o2 - o1);
+//        System.out.println(Arrays.toString(arr));
+
+//        String[] arr = {"AAA", "BBB", "CCC"};
+//        String[] newArr = Arrays.copyOf(arr, 3);   //这里传入的类型是什么，返回的类型就是什么，也是用到了泛型
+//        System.out.println(Arrays.toString(newArr));
+        /*函数式接口练习*/
+//        Supplier<Student> studentSupplier = Student::new;
+//        Student student = studentSupplier.get();
+//        student.doHomework();
+//
+//        Consumer<Student> studentConsumer = student1 -> System.out.println(student1 + " is so delicious!");
+//        studentConsumer.andThen(student1 -> System.out.println("yes " + student1 + "is so delicious")).accept(student);
+//
+//        Function<Integer, String> INTEGER_STRING_FUNCTION = Object::toString;
+//        Boolean str = INTEGER_STRING_FUNCTION.compose(String::length).andThen(String::isEmpty).apply("tianwayNB");
+//        System.out.println(str);
+//        Predicate<Student> studentPredicate = student -> student.getScore() >= 60;
+//        Student student = new Student();
+//        if (studentPredicate.and(student1 -> student1.getScore() >= 90).test(student)) {
+//            System.out.println("及格了");
+//        } else {
+//            System.out.println("不及格");
+//        }
+//        Predicate<String> predicate = Predicate.isEqual("hello world");
+//        System.out.println(predicate.test("hello world!"));
+
     }
 }
